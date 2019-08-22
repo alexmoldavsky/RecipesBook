@@ -6,5 +6,10 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'udemy-angular-app-recipe';
+
+  loadedMenu: String = 'recipes';
+
+  onMenuSelect(menuName: string) {
+    this.loadedMenu = menuName;
+  }
 }
